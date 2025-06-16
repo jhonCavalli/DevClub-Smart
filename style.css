@@ -54,6 +54,6 @@ header nav ul li::after {
     transition: width 0.6s ease;
 }
 
-header nav ul li::after::hover {
+header nav ul li:hover::after {
     width: 100%;
 }
