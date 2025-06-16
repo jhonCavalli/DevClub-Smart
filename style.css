@@ -57,3 +57,22 @@ header nav ul li::after {
 header nav ul li:hover::after {
     width: 100%;
 }
+
+.container {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f1e 0%, #1f1f3a 100%);
+    overflow: hidden;
+}
+.container::before {
+    content: '';
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 247, 255, 0.1) 0%, rgba(15, 15, 30, 0) 70%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
