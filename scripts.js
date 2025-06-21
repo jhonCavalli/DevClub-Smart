@@ -1,4 +1,4 @@
-const prevButton = document.getElementByIdtEle('prev');
+const prevButton = document.getElementById('prev');
 const nextButton = document.getElementById('next');
 const items = document.querySelectorAll('.item');
 const dots = document.querySelectorAll('.dot');
@@ -30,8 +30,6 @@ function update(direction) {
             active = total - 1;
         }
     }
-
-}
 
     items[active].classList.add('active');
     dots[active].classList.add('active');
