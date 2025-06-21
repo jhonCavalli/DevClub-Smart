@@ -129,7 +129,15 @@ header nav ul li:hover::after {
     max-width: 80%;
     max-height: 60%;
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+
+    transform: translateX(200px);
+    opacity: 0;
 }    
+
+.active .product-img img {
+    transform: translateX(0);
+    opacity: 1;
+}
 
 .content {
     width: 55%;
