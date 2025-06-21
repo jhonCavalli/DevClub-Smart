@@ -165,6 +165,17 @@ header nav ul li:hover::after {
     font-family: "Orbitron", sans-serif;
     line-height: 1.1;
     margin-bottom: 20px;
+
+    transform: translateX(200px);
+    opacity: 0;
+    transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+    transition-delay: 0.5s;
+
+}
+
+.active .product-name {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .description {
@@ -173,6 +184,16 @@ header nav ul li:hover::after {
     line-height: 1.6;
     margin-bottom: 30px;
     max-width: 600px;
+
+    transform: translateX(200px);
+    opacity: 0;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.active .description {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .btn {
