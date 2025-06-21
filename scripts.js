@@ -15,7 +15,7 @@ function update(direction) {
     document.querySelector('.item.active').classList.remove('active');
     document.querySelector('.dot.active').classList.remove('active');
 
-    if(direction > 0) {
+    if(direction > 0){
         active = active + 1
 
         if(active === total) {
@@ -24,10 +24,17 @@ function update(direction) {
     } 
 
     else if(direction < 0) {
+        active = active - 1;
 
+        if(active < 0) {
+            active = total - 1;
+        }
+    }
 
 }
+
     items[active].classList.add('active');
+    dots[active].classList.add('active');
     
 
 }
