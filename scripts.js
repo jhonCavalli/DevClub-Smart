@@ -9,10 +9,33 @@ let active = 0;
 const total = items.length;
 let timer;
 
-prevButton.addEventListener('click', function () => {
-    alert("Prev");
-})
 
-nextButton.addEventListener('click', function () => {
-    alert("Next");
-})
+function update(direction) {
+
+    document.querySelector('.item.active').classList.remove('active');
+    document.querySelector('.dot.active').classList.remove('active');
+
+    if(direction > 0) {
+        active = active + 1
+
+        if(active === total) {
+            active = 0;
+        }
+    } 
+
+    else if(direction < 0) {
+
+
+}
+    items[active].classList.add('active');
+    
+
+}
+
+prevButton.addEventListener('click',  () => {
+    update(-1);
+});
+
+nextButton.addEventListener('click',  () => {
+    update(1);
+});
