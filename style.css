@@ -238,7 +238,7 @@ header nav ul li:hover::after {
 }
 .arrow-btn:hover {
     background-color: rgba(0, 247, 255, 0.2);
-    border-color: #00f7ff;
+    border-color: #2ba4a8;
 }
 
 .indicators {
