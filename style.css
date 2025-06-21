@@ -253,8 +253,8 @@ header nav ul li:hover::after {
 .circle:nth-child(1) {
     width: 200px;
     height: 200px;
-    top: 20%;
-    left: 20%;
+    top: 10%;
+    left: 10%;
 }
 .circle:nth-child(2) {
     width: 300px;
@@ -266,13 +266,13 @@ header nav ul li:hover::after {
 .circle:nth-child(3) {
     width: 150px;
     height: 150px;
-    top: 10%;
-    left: 90%;
+    top: 70%;
+    left: 20%;
 }
 .circle:nth-child(4) {
-    width: 150px;
-    height: 150px;
-    top: 0%;
+    width: 120px;
+    height: 120px;
+    top: 20%;
     left: 70%;
 }
 
